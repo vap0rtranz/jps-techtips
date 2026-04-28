@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+  HTML5 doesn't need XML so the typical <!DOCTYPE html> isn't needed
+  BUT W3C's own Validator doesn't like not having the doc type
+  if broken, insert line 1 as the typical: xml version="1.0" 
+-->
+<!-- HEAD -->
+<head>
+  <!-- http-equiv pragma is really not good but often expected by validators.  
+  See http://www.w3.org/TR/html5/document-metadata.html#attr-meta-http-equiv
+  all that should be needed for this line is: 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  -->
+  <meta charset="utf-8">
+  <!-- responsive UI based on device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Justin Pittman - Red Hat People page">
+  <meta name="keywords" content="HTML5,CSS3,static site,Red Hat,redhat.com,JBoss,journal">
+  <meta translate="no" name="author" content="Justin Pittman">
+  <link rel="stylesheet" href="./css/home.css" type="text/css" >
+  <title>Red Hat People - Justin Pittman</title>
+</head>
+<!-- BODY -->
+<body>
+<!-- HEADER: NAVBAR -->
+<header class="nav_header nav">
+ <nav class="nav_header nav">
+  <ul class="nav_ul nav">
+   <li class="active nav nav_li"><a class="nav nav_a" href="/index.html">Home</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" href="./cheatsheets/">Cheatsheets</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" target="_blank" href="https://developers.redhat.com/topics/kubernetes#assembly-field-sections-53271">Books</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" href="./blog/">Journal</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" href="./howtos/">HowTos</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" href="./presos/">Presos</a></li>
+   <li class="nav nav_li"><a class="nav nav_a" target="_blank" href="https://github.com/vap0rtranz">Code</a></li>
+  </ul>
+ </nav> 
+</header>
+<!-- MAIN SECTION -->
+<main>
+<section>
+ <header>
+  <h1>Simple Site for Red Hat Tech</h1>
+	  <p>This is a simple site to get Red Hat stuff -- like cheatsheets, books, howtos, preso, and code -- into your hands.
+  </header>
+    <h2>Some Goodies</h2>
+    <article>
+	<details>
+	  <summary>Performance Testing Commands Pancake</summary>
+	  <p><img src="./images/perf-commands.png" width="145" height="64" alt="perf pancake diagram" title="Performance Command Pancake"/>
+	  <p>Brendan Gregg of Netflix shared an <a href="http://www.brendangregg.com/Slides/Percona2016_LinuxSystemsPerf.pdf">excellent pancake diagram</a> of Linux command line utilities to monitor performance.
+	  <p><a href="./images/perf-commands.png">Larger scale image of pancake</a>
+	  <p><time datetime="2018-12-01">2018</time>
+	</details>
+    <article>
+	<details>
+	  <summary>k8s Troubleshooting Visual Flowchart</summary>
+	  <p><a href="https://learnk8s.io/troubleshooting-deployments">A visual guide on troubleshooting Kubernetes deployments</a>
+	  <p>cross posted <time datetime="2019-12-01">December 2019</time>
+	</details>
+  </article>
+  <article>
+	<details>
+	  <summary>Lightboard! OpenShift Networking w/ F5 BigIP & WWT</summary>
+	  <p><a href="https://youtu.be/rxYs6DOR3-8">F5 BIG-IP & Red Hat OpenShift: high performance, secure applications</a>
+	  <p>cross posted <time datetime="2019-12-01">Sept 2019</time>
+	</details>
+  </article>
+  <article>
+	<details>
+	  <summary>Dockerfile vs. OpenShift</summary>
+	  <p><blockquote cite="../howtos/just-want-to-use-a-dockerfile-why-is-openshift-so-difficult.pdf">I JUST want to use a Dockerfile! ... Why is OpenShift so difficult?!</blockquote>
+	  <p><a href="./howtos/just-want-to-use-a-dockerfile-why-is-openshift-so-difficult.pdf">Dockerfiles in OpenShift</a>
+	  <p>posted <time datetime="2019-03-07">March 7th, 2019</time>
+	</details>
+  </article>
+  <article>
+	<details>
+	  <summary>OpenShift Commands CheatSheet</summary>
+	  <p><blockquote cite="../howtos/openshift-day-2-ops-cheatsheet.pdf">I know kubectl, so why is oc so hard?!</blockquote>
+	  <p><a href="./howtos/openshift-day-2-ops-cheatsheet.pdf">OpenShift Commands Cheatsheet</a>
+	  <p>posted <time datetime="2018-09-12">Sep 12, 2018</time>
+	</details>
+  </article>
+  <article>
+	<details>
+	  <summary>Javascript Bloatware</summary>
+	  <p>My reasons for sticking to good ole <code>html</code>
+	  <p><a href="./blog/web-bloat.html">Avoiding Web Bloatware: JavaScript, Analytics, Advertising</a>
+	  <p>posted <time datetime="2016-10-19">October 19th, 2016</time>
+	</details>
+  </article>
+</section>
+
+  <aside>
+   <h2>Tech Nostalgia</h2>
+   <!-- testing  <audio controls><source src="https://archive.org/download/ChildsPlay2-Trial/ChildsPlay-2-stereo-gainfix.ogg" type=audio/ogg></audio>
+    -->
+    <p>8-bits is all we ever needed.
+	<p><a href="https://en.wikipedia.org/wiki/8-bit"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Atari_Basic_Program_Animation.gif" title="Atari BASIC" alt=" Atari BASIC gif"/></a>
+    <p>The sound of being "connected" in the 80s:
+	<p><audio controls><source src="https://ia800503.us.archive.org/35/items/ModemSound/ModemSound1.ogg" type=audio/ogg></audio>
+  </aside>
+
+<!-- FOOTER -->
+<footer class="nav_footer nav">
+ <nav class="nav_footer nav">
+  <ul class="nav_ul nav">
+    <li class="nav nav_li"><a class="nav_a nav" href="mailto:justin.pittman@redhat.com">Email</a></li>
+    <li class="nav nav_li"><a class="nav_a nav" href="https://www.linkedin.com/in/justinpittman/">Linkedin</a></li>
+    <li class="nav nav_li"><a class="nav_a nav" href=#nav_header>Top</a></li>
+  </ul>
+ </nav>
+ <hr>
+  <a href="http://www.w3.org/html/logo/">
+    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered" title="HTML5 Powered">
+  </a>
+  <a href="https://jigsaw.w3.org/css-validator/">
+    <img src="https://jigsaw.w3.org/css-validator/images/vcss" width="88" height="31" alt="Valid CSS!" title="W3C Validated CSS!"/>
+  </a>
+  <img src="./images/people_redhat_com.png" width="145" height="64" alt="Red Hat People logo" title="Red Hat People logo"/>
+</footer> 
+</main>
+</body>
+</html>
