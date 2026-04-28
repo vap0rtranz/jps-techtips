@@ -1,3 +1,0 @@
-# Redirect to homepage
-Redirect /index.html /html/home.html
-#RewriteRule ^index.html$ /html/home.html [R,L]
